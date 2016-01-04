@@ -1,0 +1,34 @@
+@import "../vendor/bootstrap/scss/_mixins.scss";
+@import "../vendor/bootstrap/scss/_variables.scss";
+@import "mixins.scss";
+@import "variables.scss";
+@import "variables.md.scss";
+@import "bs/bs.scss";
+@import "ui/ui.scss";
+@import "utils/utils.scss";
+@import "md/md.scss";
+//@import "ng.scss";
+//@import url(https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800&subset=latin,cyrillic,latin-ext,cyrillic-ext);
+
+body {
+  //font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.text-ink {
+  color: #555555;
+}
+
+.datagrid {
+  width: 100% !important;
+}
+  input, optgroup, select, textarea {
+    color: #363636 !important;
+  }
+//}
+
+#map {
+  min-height: 240px;
+  height: 100%;
+}

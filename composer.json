@@ -1,0 +1,13 @@
+{
+    "name": "solar/x-theme",
+    "description": "Solar CMS new theme",
+    "type": "Package",
+    "authors": [
+        {
+            "name": "n0m4dz",
+            "email": "tseegii.it@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {}
+}
