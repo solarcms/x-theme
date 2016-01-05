@@ -35,7 +35,7 @@
                         </a>
                     </li>
                     <li class="">
-                        <a href="#/app/dashboard">
+                        <a href="/">
                             <span class="nav-icon">
                                 <i class="icon-people icon"></i>
                             </span>
