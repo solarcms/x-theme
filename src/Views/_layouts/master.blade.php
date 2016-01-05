@@ -6,7 +6,7 @@
     <meta name="description" content="Financial soft"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimal-ui"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    @if(Config::get('app.debug'))
+    @if(Config::get('xconfig.xdebug'))
         <link rel="stylesheet" href="http://localhost:3000/css/vendor.css">
         <link rel="stylesheet" href="http://localhost:3000/css/app.css">
     @else
@@ -35,7 +35,7 @@
     </div>
 </div>
 
-@if(Config::get('app.debug'))
+@if(Config::get('xconfig.xdebug'))
     <script src="http://localhost:3000/js/vendor.js"></script>
     <script src="http://localhost:3000/js/app.js"></script>
 @else

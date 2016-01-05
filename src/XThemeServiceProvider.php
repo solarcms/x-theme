@@ -15,6 +15,11 @@ class XThemeServiceProvider extends ServiceProvider
 
     public function boot()
     {
+        // For publishin config file
+        $this->publishes([
+            __DIR__.'/Config/xconfig.php' => config_path('xconfig.php'),
+        ], 'xconfig');
+
         // For publishing assets
         $this->publishes([
             __DIR__ . DIRECTORY_SEPARATOR . 'Assets'. DIRECTORY_SEPARATOR . 'dist' => public_path('shared'),
@@ -23,6 +28,7 @@ class XThemeServiceProvider extends ServiceProvider
 
     public function register()
     {
+        $this->mergeConfigFrom( __DIR__.'/Config/xconfig.php', 'xconfig');
         $this->loadViewsFrom(__DIR__ . DIRECTORY_SEPARATOR .'Views', 'XTheme');
     }
 }
