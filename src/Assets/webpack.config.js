@@ -5,7 +5,6 @@
 var Path = require('path');
 var Webpack = require('webpack');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
-var CopyPlugin = require('copy-webpack-plugin');
 var TimestampWebpackPlugin = require('timestamp-webpack-plugin');
 
 var webpackDirs = {
@@ -13,7 +12,7 @@ var webpackDirs = {
     sassDir: Path.resolve(__dirname, './src/scss'),
     pathDir: Path.join(Path.resolve(__dirname, './dist/')),
     nodeDir: Path.join(Path.resolve(__dirname, './node_modules')),
-    logsDir: Path.join(Path.resolve(__dirname, './storage/logs')),
+    logsDir: Path.join(Path.resolve(__dirname, './logs')),
     excludeDir: [/(node_modules|tests|logs)/]
 };
 
@@ -56,12 +55,6 @@ module.exports = {
             _:'underscore',
             'window._': 'underscore'
         }),
-
-        //Copy assets
-        new CopyPlugin([
-            // File
-            //{from: Path.resolve(__dirname, './src/images/authbg.jpg'), to: 'images/authbg.jpg', toType: 'file'},
-        ]),
 
         //Timestamp for webpack
         new TimestampWebpackPlugin({

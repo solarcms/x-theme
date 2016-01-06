@@ -15,7 +15,7 @@
     @endif
 
     @yield('style')
-    <script src="http://maps.google.com/maps/api/js?v=3&sensor=true"></script>
+    {{--<script src="http://maps.google.com/maps/api/js?v=3&sensor=true"></script>--}}
 </head>
 <body>
 

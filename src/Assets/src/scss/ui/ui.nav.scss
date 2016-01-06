@@ -12,36 +12,39 @@
     li {
       border: inherit;
       position: relative;
-      //li {
-      //  a {
-      //    line-height: $aside-nav-sub-height;
-      //    padding-left: 3.5rem;
-      //    .nav-text {
-      //      padding: ($aside-nav-sub-height - 1.125)/1.2 0;
-      //    }
-      //  }
-      //  li a {
-      //    padding-left: 4.5rem;
-      //  }
-      //  li li a {
-      //    padding-left: 5.5rem;
-      //  }
-      //}
+      li {
+        a {
+          line-height: 1rem;
+          padding-left: 3.5rem;
+          .nav-text {
+            padding: 5px 0;
+          }
+        }
+        li a {
+          padding-left: 4.5rem;
+        }
+        li li a {
+          padding-left: 5.5rem;
+        }
+      }
       a {
         @include clearfix();
         display: block;
-        padding: 0 1rem;
+        padding: 0.3rem 1rem;
         line-height: $aside-nav-height;
         position: relative;
         &:hover,
         &:focus {
           background-color: $min-black;
+        //  color: #ffffff;
         }
       }
       &.active {
         background-color: $min-black;
         > a {
           background-color: transparent;
+          color: $primary;
+          font-weight: 500;
           .nav-caret i {
             @include rotate(180deg);
           }
@@ -74,8 +77,8 @@
   display: block;
   line-height: 1.125rem;
   padding: ($aside-nav-height - 1.125)/2 0;
-  .nav > li > a & {
-    font-weight: 400;
+  .nav > li > a{
+    font-weight: 500;
     color: #eeeeee;
   }
   span,

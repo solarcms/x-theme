@@ -6,5 +6,6 @@
  * Time: 6:42 PM
  */
 return [
-    'xdebug' => true
+    'xdebug' => true,
+    'sidebar' => 'default'
 ];
