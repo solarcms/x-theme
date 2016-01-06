@@ -15,6 +15,9 @@ class XThemeServiceProvider extends ServiceProvider
 
     public function boot()
     {
+
+        include __DIR__ . DIRECTORY_SEPARATOR .'routes.php';
+
         // For publishin config file
         $this->publishes([
             __DIR__.'/Config/xconfig.php' => config_path('xconfig.php'),

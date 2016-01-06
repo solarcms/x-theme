@@ -35,6 +35,8 @@
     </div>
 </div>
 
+@include('XTheme::_partials.modal')
+
 @if(Config::get('xconfig.xdebug'))
     <script src="http://localhost:3000/js/vendor.js"></script>
     <script src="http://localhost:3000/js/app.js"></script>

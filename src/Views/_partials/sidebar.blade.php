@@ -13,7 +13,7 @@
                     <li class="active">
                         <a href="{{ URL::route('Solar.Dashboard::index') }}">
                             <span class="nav-icon">
-                                <i class="icon-map icon"></i>
+                                <i class="icon-grid icon"></i>
                             </span>
                             <span class="nav-text nav-fold">Самбар</span>
                         </a>
@@ -62,7 +62,7 @@
             </nav>
         </div>
 
-        <div flex-no-shrink=""  >
+        <div flex-no-shrink="">
             <nav>
                 <ul class="nav">
                     <li>
@@ -77,7 +77,7 @@
                         </a>
                     </li>
                     <li class="no-bg">
-                        <a class="auto">
+                        <a href="{{ URL::route('Solar::settings') }}" class="auto">
                             <span class="nav-icon">
                                 <i class="icon-wrench icon"></i>
                             </span>
@@ -87,12 +87,15 @@
 
 
                     <li>
-                        <div class="b-b b m-t-sm"></div>
+                        <div class="b-b b"></div>
                     </li>
                     <li class="no-bg">
-                        <a href="#">
+
+
+                        <a href="#" data-toggle="modal" data-target="#logout">
                             <span class="nav-icon">
                                 <i class="icon-power icon"></i>
+                            </span>
                             <span class="nav-text">Гарах</span>
                         </a>
                     </li>

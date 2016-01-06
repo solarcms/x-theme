@@ -7,13 +7,11 @@
  */
 
 Route::group([
-    'namespace' => 'Solarcms\Dashboard\Controllers',
+    'namespace' => 'Solarcms\XTheme\Controllers',
     'prefix' =>'solar',
     'as' => 'Solar::',
     'middleware' => 'auth'], function() {
 
-    Route::get('settings', ['as' => 'settings'], function(){
-
-    });
+    Route::get('settings', ['as' => 'settings', 'uses' => 'XThemeController@settings']);
 
 });
