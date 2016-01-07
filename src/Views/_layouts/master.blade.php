@@ -6,6 +6,7 @@
     <meta name="description" content="Financial soft"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimal-ui"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
     @if(Config::get('xconfig.xdebug'))
         <link rel="stylesheet" href="http://localhost:3000/css/vendor.css">
         <link rel="stylesheet" href="http://localhost:3000/css/app.css">
