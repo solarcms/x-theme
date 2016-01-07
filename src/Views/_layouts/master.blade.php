@@ -45,6 +45,7 @@
     <script src="{{ URL::asset('shared/js/vendor.js') }}"></script>
     <script src="{{ URL::asset('shared/js/app.js') }} "></script>
 @endif
+
 @yield('script')
 </body>
 </html>

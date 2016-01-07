@@ -15,7 +15,7 @@
                             <span class="nav-icon">
                                 <i class="icon-grid icon"></i>
                             </span>
-                            <span class="nav-text nav-fold">Самбар</span>
+                            <span class="nav-text">Самбар</span>
                         </a>
                     </li>
                     <li class="">
