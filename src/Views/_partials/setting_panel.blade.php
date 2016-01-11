@@ -36,7 +36,7 @@
                             <li class="active">
                                 <a href="{{ URL::route('Solar.TableManager::index') }}">
                                     <span class="nav-icon">
-                                        <i class="fa fa-th-large"></i>
+                                        <i class="material-icons">&#xE3EC;</i>
                                     </span>
                                     <span>Table manager</span>
                                 </a>
