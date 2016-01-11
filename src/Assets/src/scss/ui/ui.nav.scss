@@ -7,6 +7,7 @@
   [flex] {
     overflow: auto;
   }
+
   .nav {
     border: inherit;
     li {
@@ -109,7 +110,7 @@
   float: left;
   line-height: inherit;
   margin-right: 1rem;
-  top: 0;
+  top: 4px;
   min-width: 1.5rem;
   text-align: center;
   i {

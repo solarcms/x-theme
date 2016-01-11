@@ -10,7 +10,7 @@ body{
 }
 
 .app{
-  	
+
 }
 
 .app-aside{
@@ -83,6 +83,7 @@ body{
 }
 
 @include media-breakpoint-up(lg) {
+
 	.app-aside {
 		opacity: 1;
 		display: block !important;
@@ -108,10 +109,11 @@ body{
 				margin-left: $aside-sm-width;
 			}
 		}
+
 		&.folded{
-			width: $aside-folded-width;
+			width: $aside-folded-width-px !important;
 			&:not(.hide) ~ .app-content{
-				margin-left: $aside-folded-width;
+				margin-left: $aside-folded-width-px !important;
 			}
 			&.md{
 				width: $aside-folded-md-width;

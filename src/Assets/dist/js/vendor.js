@@ -83,7 +83,7 @@
 /******/ 	
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "d970087579e7b48c9dfe"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "9d66d877c6b10a8db85d"; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentParents = []; // eslint-disable-line no-unused-vars
 /******/ 	
@@ -9845,12 +9845,12 @@
 	 * Created by n0m4dz on 12/29/15.
 	 */
 
+	//require('../../node_modules/font-awesome/scss/font-awesome');
+	//require('../../node_modules/simple-line-icons/scss/simple-line-icons');
 	__webpack_require__(14);
 	__webpack_require__(15);
 	__webpack_require__(16);
-	__webpack_require__(17);
-	__webpack_require__(18);
-	window.screenfull = __webpack_require__(19);
+	window.screenfull = __webpack_require__(17);
 
 /***/ },
 /* 14 */
@@ -9860,18 +9860,6 @@
 
 /***/ },
 /* 15 */
-/***/ function(module, exports) {
-
-	// removed by extract-text-webpack-plugin
-
-/***/ },
-/* 16 */
-/***/ function(module, exports) {
-
-	// removed by extract-text-webpack-plugin
-
-/***/ },
-/* 17 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(jQuery) {/*!
@@ -9884,14 +9872,14 @@
 	  throw new Error('Bootstrap\'s JavaScript requires jQuery');
 	}
 
-	+function ($) {
+	+(function ($) {
 	  var version = $.fn.jquery.split(' ')[0].split('.');
 	  if (version[0] < 2 && version[1] < 9 || version[0] == 1 && version[1] == 9 && version[2] < 1) {
 	    throw new Error('Bootstrap\'s JavaScript requires jQuery version 1.9.1 or higher');
 	  }
-	}(jQuery);
+	})(jQuery);
 
-	+function ($) {
+	+(function ($) {
 
 	  /**
 	   * --------------------------------------------------------------------------
@@ -9922,7 +9910,7 @@
 	    }
 	  };
 
-	  var _createClass = function () {
+	  var _createClass = (function () {
 	    function defineProperties(target, props) {
 	      for (var i = 0; i < props.length; i++) {
 	        var descriptor = props[i];descriptor.enumerable = descriptor.enumerable || false;descriptor.configurable = true;if ('value' in descriptor) descriptor.writable = true;Object.defineProperty(target, descriptor.key, descriptor);
@@ -9930,7 +9918,7 @@
 	    }return function (Constructor, protoProps, staticProps) {
 	      if (protoProps) defineProperties(Constructor.prototype, protoProps);if (staticProps) defineProperties(Constructor, staticProps);return Constructor;
 	    };
-	  }();
+	  })();
 
 	  function _inherits(subClass, superClass) {
 	    if (typeof superClass !== 'function' && superClass !== null) {
@@ -9944,7 +9932,7 @@
 	    }
 	  }
 
-	  var Util = function ($) {
+	  var Util = (function ($) {
 
 	    /**
 	     * ------------------------------------------------------------------------
@@ -9963,7 +9951,7 @@
 
 	    // shoutout AngusCroll (https://goo.gl/pxwQGp)
 	    function toType(obj) {
-	      return {}.toString.call(obj).match(/\s([a-zA-Z]+)/)[1].toLowerCase();
+	      return ({}).toString.call(obj).match(/\s([a-zA-Z]+)/)[1].toLowerCase();
 	    }
 
 	    function isElement(obj) {
@@ -10090,7 +10078,7 @@
 	    setTransitionEndSupport();
 
 	    return Util;
-	  }(jQuery);
+	  })(jQuery);
 
 	  /**
 	   * --------------------------------------------------------------------------
@@ -10099,7 +10087,7 @@
 	   * --------------------------------------------------------------------------
 	   */
 
-	  var Alert = function ($) {
+	  var Alert = (function ($) {
 
 	    /**
 	     * ------------------------------------------------------------------------
@@ -10137,7 +10125,7 @@
 	     * ------------------------------------------------------------------------
 	     */
 
-	    var Alert = function () {
+	    var Alert = (function () {
 	      function Alert(element) {
 	        _classCallCheck(this, Alert);
 
@@ -10258,7 +10246,7 @@
 	      }]);
 
 	      return Alert;
-	    }();
+	    })();
 
 	    $(document).on(Event.CLICK_DATA_API, Selector.DISMISS, Alert._handleDismiss(new Alert()));
 
@@ -10276,7 +10264,7 @@
 	    };
 
 	    return Alert;
-	  }(jQuery);
+	  })(jQuery);
 
 	  /**
 	   * --------------------------------------------------------------------------
@@ -10285,7 +10273,7 @@
 	   * --------------------------------------------------------------------------
 	   */
 
-	  var Button = function ($) {
+	  var Button = (function ($) {
 
 	    /**
 	     * ------------------------------------------------------------------------
@@ -10325,7 +10313,7 @@
 	     * ------------------------------------------------------------------------
 	     */
 
-	    var Button = function () {
+	    var Button = (function () {
 	      function Button(element) {
 	        _classCallCheck(this, Button);
 
@@ -10411,7 +10399,7 @@
 	      }]);
 
 	      return Button;
-	    }();
+	    })();
 
 	    $(document).on(Event.CLICK_DATA_API, Selector.DATA_TOGGLE_CARROT, function (event) {
 	      event.preventDefault();
@@ -10442,7 +10430,7 @@
 	    };
 
 	    return Button;
-	  }(jQuery);
+	  })(jQuery);
 
 	  /**
 	   * --------------------------------------------------------------------------
@@ -10451,7 +10439,7 @@
 	   * --------------------------------------------------------------------------
 	   */
 
-	  var Carousel = function ($) {
+	  var Carousel = (function ($) {
 
 	    /**
 	     * ------------------------------------------------------------------------
@@ -10523,7 +10511,7 @@
 	     * ------------------------------------------------------------------------
 	     */
 
-	    var Carousel = function () {
+	    var Carousel = (function () {
 	      function Carousel(element, config) {
 	        _classCallCheck(this, Carousel);
 
@@ -10878,7 +10866,7 @@
 	      }]);
 
 	      return Carousel;
-	    }();
+	    })();
 
 	    $(document).on(Event.CLICK_DATA_API, Selector.DATA_SLIDE, Carousel._dataApiClickHandler);
 
@@ -10903,7 +10891,7 @@
 	    };
 
 	    return Carousel;
-	  }(jQuery);
+	  })(jQuery);
 
 	  /**
 	   * --------------------------------------------------------------------------
@@ -10912,7 +10900,7 @@
 	   * --------------------------------------------------------------------------
 	   */
 
-	  var Collapse = function ($) {
+	  var Collapse = (function ($) {
 
 	    /**
 	     * ------------------------------------------------------------------------
@@ -10969,7 +10957,7 @@
 	     * ------------------------------------------------------------------------
 	     */
 
-	    var Collapse = function () {
+	    var Collapse = (function () {
 	      function Collapse(element, config) {
 	        _classCallCheck(this, Collapse);
 
@@ -11232,7 +11220,7 @@
 	      }]);
 
 	      return Collapse;
-	    }();
+	    })();
 
 	    $(document).on(Event.CLICK_DATA_API, Selector.DATA_TOGGLE, function (event) {
 	      event.preventDefault();
@@ -11258,7 +11246,7 @@
 	    };
 
 	    return Collapse;
-	  }(jQuery);
+	  })(jQuery);
 
 	  /**
 	   * --------------------------------------------------------------------------
@@ -11267,7 +11255,7 @@
 	   * --------------------------------------------------------------------------
 	   */
 
-	  var Dropdown = function ($) {
+	  var Dropdown = (function ($) {
 
 	    /**
 	     * ------------------------------------------------------------------------
@@ -11314,7 +11302,7 @@
 	     * ------------------------------------------------------------------------
 	     */
 
-	    var Dropdown = function () {
+	    var Dropdown = (function () {
 	      function Dropdown(element) {
 	        _classCallCheck(this, Dropdown);
 
@@ -11522,7 +11510,7 @@
 	      }]);
 
 	      return Dropdown;
-	    }();
+	    })();
 
 	    $(document).on(Event.KEYDOWN_DATA_API, Selector.DATA_TOGGLE, Dropdown._dataApiKeydownHandler).on(Event.KEYDOWN_DATA_API, Selector.ROLE_MENU, Dropdown._dataApiKeydownHandler).on(Event.KEYDOWN_DATA_API, Selector.ROLE_LISTBOX, Dropdown._dataApiKeydownHandler).on(Event.CLICK_DATA_API, Dropdown._clearMenus).on(Event.CLICK_DATA_API, Selector.DATA_TOGGLE, Dropdown.prototype.toggle).on(Event.CLICK_DATA_API, Selector.FORM_CHILD, function (e) {
 	      e.stopPropagation();
@@ -11542,7 +11530,7 @@
 	    };
 
 	    return Dropdown;
-	  }(jQuery);
+	  })(jQuery);
 
 	  /**
 	   * --------------------------------------------------------------------------
@@ -11551,7 +11539,7 @@
 	   * --------------------------------------------------------------------------
 	   */
 
-	  var Modal = function ($) {
+	  var Modal = (function ($) {
 
 	    /**
 	     * ------------------------------------------------------------------------
@@ -11617,7 +11605,7 @@
 	     * ------------------------------------------------------------------------
 	     */
 
-	    var Modal = function () {
+	    var Modal = (function () {
 	      function Modal(element, config) {
 	        _classCallCheck(this, Modal);
 
@@ -12021,7 +12009,7 @@
 	      }]);
 
 	      return Modal;
-	    }();
+	    })();
 
 	    $(document).on(Event.CLICK_DATA_API, Selector.DATA_TOGGLE, function (event) {
 	      var _this13 = this;
@@ -12069,7 +12057,7 @@
 	    };
 
 	    return Modal;
-	  }(jQuery);
+	  })(jQuery);
 
 	  /**
 	   * --------------------------------------------------------------------------
@@ -12078,7 +12066,7 @@
 	   * --------------------------------------------------------------------------
 	   */
 
-	  var ScrollSpy = function ($) {
+	  var ScrollSpy = (function ($) {
 
 	    /**
 	     * ------------------------------------------------------------------------
@@ -12142,7 +12130,7 @@
 	     * ------------------------------------------------------------------------
 	     */
 
-	    var ScrollSpy = function () {
+	    var ScrollSpy = (function () {
 	      function ScrollSpy(element, config) {
 	        _classCallCheck(this, ScrollSpy);
 
@@ -12355,7 +12343,7 @@
 	      }]);
 
 	      return ScrollSpy;
-	    }();
+	    })();
 
 	    $(window).on(Event.LOAD_DATA_API, function () {
 	      var scrollSpys = $.makeArray($(Selector.DATA_SPY));
@@ -12380,7 +12368,7 @@
 	    };
 
 	    return ScrollSpy;
-	  }(jQuery);
+	  })(jQuery);
 
 	  /**
 	   * --------------------------------------------------------------------------
@@ -12389,7 +12377,7 @@
 	   * --------------------------------------------------------------------------
 	   */
 
-	  var Tab = function ($) {
+	  var Tab = (function ($) {
 
 	    /**
 	     * ------------------------------------------------------------------------
@@ -12439,7 +12427,7 @@
 	     * ------------------------------------------------------------------------
 	     */
 
-	    var Tab = function () {
+	    var Tab = (function () {
 	      function Tab(element) {
 	        _classCallCheck(this, Tab);
 
@@ -12613,7 +12601,7 @@
 	      }]);
 
 	      return Tab;
-	    }();
+	    })();
 
 	    $(document).on(Event.CLICK_DATA_API, Selector.DATA_TOGGLE, function (event) {
 	      event.preventDefault();
@@ -12634,7 +12622,7 @@
 	    };
 
 	    return Tab;
-	  }(jQuery);
+	  })(jQuery);
 
 	  /**
 	   * --------------------------------------------------------------------------
@@ -12643,7 +12631,7 @@
 	   * --------------------------------------------------------------------------
 	   */
 
-	  var Tooltip = function ($) {
+	  var Tooltip = (function ($) {
 
 	    /**
 	     * ------------------------------------------------------------------------
@@ -12738,7 +12726,7 @@
 	     * ------------------------------------------------------------------------
 	     */
 
-	    var Tooltip = function () {
+	    var Tooltip = (function () {
 	      function Tooltip(element, config) {
 	        _classCallCheck(this, Tooltip);
 
@@ -13219,7 +13207,7 @@
 	      }]);
 
 	      return Tooltip;
-	    }();
+	    })();
 
 	    $.fn[NAME] = Tooltip._jQueryInterface;
 	    $.fn[NAME].Constructor = Tooltip;
@@ -13229,7 +13217,7 @@
 	    };
 
 	    return Tooltip;
-	  }(jQuery);
+	  })(jQuery);
 
 	  /**
 	   * --------------------------------------------------------------------------
@@ -13238,7 +13226,7 @@
 	   * --------------------------------------------------------------------------
 	   */
 
-	  var Popover = function ($) {
+	  var Popover = (function ($) {
 
 	    /**
 	     * ------------------------------------------------------------------------
@@ -13293,7 +13281,7 @@
 	     * ------------------------------------------------------------------------
 	     */
 
-	    var Popover = function (_Tooltip) {
+	    var Popover = (function (_Tooltip) {
 	      _inherits(Popover, _Tooltip);
 
 	      function Popover() {
@@ -13413,7 +13401,7 @@
 	      }]);
 
 	      return Popover;
-	    }(Tooltip);
+	    })(Tooltip);
 
 	    $.fn[NAME] = Popover._jQueryInterface;
 	    $.fn[NAME].Constructor = Popover;
@@ -13423,12 +13411,12 @@
 	    };
 
 	    return Popover;
-	  }(jQuery);
-	}(jQuery);
+	  })(jQuery);
+	})(jQuery);
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(6)))
 
 /***/ },
-/* 18 */
+/* 16 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_RESULT__;/*! tether 1.1.0 */
@@ -15149,7 +15137,7 @@
 
 
 /***/ },
-/* 19 */
+/* 17 */
 /***/ function(module, exports) {
 
 	/*!
