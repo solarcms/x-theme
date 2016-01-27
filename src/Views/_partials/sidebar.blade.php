@@ -45,7 +45,7 @@
                     <li>
                         <a href="#/app/dashboard">
                             <span class="nav-icon">
-                            <i class="material-icons">&#xE063;</i>
+                            <i class="material-icons">&#xE310;</i>
                             </span>
                             <span class="hidden-lg-up">
                             <span class="nav-text">Медиа</span>
@@ -73,7 +73,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="{{ URL::route('Solar.UserManager::index') }}">
+                        <a href="{{ URL::route('Solar.UserManager::index') }}/">
                             <span class="nav-icon">
                             <i class="material-icons i24">&#xE8D3;</i>
                             </span>
