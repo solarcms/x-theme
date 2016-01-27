@@ -36,15 +36,15 @@
         position: relative;
         &:hover,
         &:focus {
-          background-color: $min-black;
-        //  color: #ffffff;
+          //background-color: $min-black;
+          color: $accent;
         }
       }
       &.active {
         background-color: $min-black;
         > a {
           background-color: transparent;
-          color: $primary;
+          color: $accent;
           font-weight: 500;
           .nav-caret i {
             @include rotate(180deg);
@@ -67,6 +67,10 @@
   .navbar-brand {
     float: none;
     margin-right: 0;
+    padding: 0;
+    img{
+      max-height: 48px !important;
+    }
 
   }
 }

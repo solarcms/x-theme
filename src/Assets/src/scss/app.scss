@@ -20,4 +20,69 @@ body {
   color: #555555;
 }
 
+.logo-header{
+  height: 56px !important;
+  overflow: hidden;
+  img{
+    margin-top: 4px;
+  }
+}
+
+.bg-panel-dark{
+  background:  #333A45;
+}
+
+.b-red{
+  border: solid 1px red !important;
+}
+
+.no-margin{
+  margin: 0 !important;
+}
+
+.nav-dark{
+  .nav-header{
+    span{
+      color: #eeeeee;
+      text-transform: uppercase;
+      padding-left: 10px;
+    }
+  }
+
+  ul{
+    li{
+      a{
+        span{
+          font-weight: 700 !important;
+          font-size: 12px;
+          color: #cacaca;
+          padding-left: 10px;
+        }
+      }
+      &:hover{
+        a{
+          span{
+            color: #eeeeee;
+          }
+        }
+      }
+    }
+  }
+}
+
+.btn-panel-top{
+  width: 84%;
+  margin: 18px 0px 25px;
+  padding-top: 3px;
+  font-weight: 600;
+  color: #eeeeee;
+  span{
+    margin-top: 2px;
+
+  }
+}
+
+#solar-tp{
+  background: #ffffff !important;
+}
 

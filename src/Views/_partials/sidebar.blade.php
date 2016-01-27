@@ -73,7 +73,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="{{ URL::route('Solar.UserManager::index') }}">
+                        <a href="">
                             <span class="nav-icon">
                             <i class="material-icons i24">&#xE8D3;</i>
                             </span>
